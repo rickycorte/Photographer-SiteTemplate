@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Galley</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body class="bg-gray">
+    <!-- CONTENT  -->
+    <div class="container-fluid">
+      <!-- NAVBAR -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse header redborder" id="navbar">
+          <div class="container-fluid">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><h1 class="nopadding top-padding-5 left-padding-5">My Gallery</h1></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a onclick="scrollToCollapsed('#contacts')" class="clickable">Who I Am?</a></li>
+                  <li><a onclick="scrollToCollapsed('#contacts','#mSend')" class="clickable">Contact me</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+      <!-- ROW  -->
+      <div class="row" id="top">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/1.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title that is a bit long for one line</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/2.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/3.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/4.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght and will need at least three lines of space under the photo<br><br><br><br>A huge space<br><br><br><br>A huge space</h4>
+         </div>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/5.jpg" class="image-box-fill pic" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/6.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/7.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/8.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/13.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght and will need at least three lines of space under the photo.</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow">
+           <div class="nooverflow blackbox">
+             <h4 class="blackbox-text">27/11/2016</h4>
+             <h1>WHOA! A box where you can type whatever you want!</h1>
+             <h3>This is a brief description that can not exit the box size!<br>NOTE: the box size is fixed, If the text is too long will be truncated!</h3>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/14.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/15.jpg" class="image-box-fill" onload="ResizeImage(this)">
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+      </div>
+
+      <!-- ROW 4 -->
+      <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/9.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/10.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/11.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+           <img src="images/12.jpg" class="image-box-fill" onload="ResizeImage(this)" >
+           <h2 class="pic-title  pic-title-s pic-text bg-gray">A image title</h2>
+           <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
+         </div>
+      </div>
+
+      <!-- PAGE SELECTOR -->
+      <div class="row nopadding text-center">
+      <div class="col-xs-12">
+        <a href="#" class="button">&larr; Back</a>
+        <a href="#" onclick="return false;" class="button noclick">1</a>
+        <a href="#" class="button">Next &rarr;</a>
+      </div>
+      </div>
+
+      <!-- INFO E CONTACT -->
+      <div class="row collapse top-padding-60" id="contacts" style="position:relative">
+        <!-- INFO -->
+        <hr width="100%">
+        <a class="fa fa-times fa-4x close-x" onclick="scrollToCollapsedToggle('#contacts')"><i class="text-invisible">close</i></a>
+        <div class="col-xs-12  col-sm-6">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+               <img src="images/profile.png"class="img-circle img-responsive center-block" width="150px">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+               <h1 class="top-padding-25">John Doe</h1>
+            </div>
+         </div>
+           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus justo sit amet ipsum laoreet placerat. Vestibulum consequat massa id risus malesuada, ut consequat felis sagittis. Duis eleifend ligula ac metus sagittis commodo. Vivamus porta orci vitae diam fringilla, vel facilisis tellus ultricies. In pretium lectus a finibus maximus. Donec condimentum, libero pellentesque ullamcorper pellentesque, sem massa finibus purus, in tincidunt lorem purus id leo. Nulla nibh justo, viverra et laoreet eget, mollis in est. Pellentesque porta massa id leo bibendum pretium. Morbi convallis, enim suscipit auctor hendrerit, ipsum quam pellentesque velit, nec dapibus libero libero in purus. Vivamus elit nisl, semper vitae venenatis auctor, molestie nec nisl. Proin tristique sodales augue vitae elementum. Aenean egestas finibus gravida. Suspendisse orci lacus, pretium a ornare ut, aliquet nec arcu. Nulla tempus pellentesque augue ut ultrices.</h3>
+        </div>
+        <!-- CONTACT -->
+        <div class="col-xs-12  col-sm-6 top-padding-60" id="mSend">
+          <h1>Contact me</h1>
+          <form class="top-padding-25">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <h3>Name:</h3>
+                <input type="text" name="name">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h3>Email:</h3>
+                <input type="text" name="email">
+              </div>
+           </div>
+           <h3>Message:</h3>
+           <textarea id="message" rows="10" name="message"></textarea>
+           <input type="submit" value="Submit" class="button">
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="row footer">
+        <div class="col-xs-12 nopadding text-center">
+          <a href="#" class="fa fa-facebook fa-4x hor-padding-50"><i class="text-invisible">Facebook</i></a>
+          <a href="#" class="fa fa-twitter fa-4x hor-padding-50"><i class="text-invisible">Twitter</i></a>
+          <a href="#" class="fa fa-instagram fa-4x hor-padding-50"><i class="text-invisible">Instagram</i></a>
+          <a href="#" class="fa fa-google-plus fa-4x hor-padding-50"><i class="text-invisible">Google Plus</i></a>
+          <a href="#" class="fa fa-youtube-play fa-4x hor-padding-50"><i class="text-invisible">Youtube</i></a>
+          <a href="#" class="fa fa-deviantart fa-4x hor-padding-50"><i class="text-invisible">Deviantart</i></a>
+        </div>
+
+        <div class="col-xs-12 nopadding text-center top-padding-25">
+          &copy Untitled | Template by: <a href="https://github.com/rickycorte" class="force-red-text">RickyCorte</a> | Photos by: <a href="https://www.instagram.com/riccardo.tonin/" class="force-red-text">Riccardo Tonin</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OVERLAY don't edit this if you don't know what are you doing-->
+    <div class="nopadding overlay overlay-color" id="img-over">
+      <img src="" class="overlay-img img-responsive">
+      <a href="#" class="fa fa-times fa-4x" onclick="closeFullScreenImage(); return false;"><i class="text-invisible">Close</i></a>
+      <h2 class="overlay-text o-title"></h2>
+      <h4 class="overlay-text o-desc bot-padding-25"></h4>
+    </div>
+    <!-- ARROW BUTTON -->
+    <a class="button fa fa-chevron-up fa-4x toTopArrow clickable" onclick="scrollTo('#top'); closeAllCollapsable();" id="backToTop"><i class="text-invisible">UP</i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/anim.js"></script>
+
+  </body>
+</html>
