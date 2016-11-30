@@ -26,8 +26,9 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a onclick="scrollToCollapsed('#contacts')" class="clickable">Who I Am?</a></li>
-                  <li><a onclick="scrollToCollapsed('#contacts','#mSend')" class="clickable">Contact me</a></li>
+                  <li><a id="bio-navlink" class="clickable">Who I Am?</a></li>
+                  <li><a id="contact-navlink" class="clickable">Contact me</a></li>
+                  <li><a href="https://github.com/rickycorte/Photographer-SiteTemplate" class="clickable">Source Code</a></li>
                 </ul>
               </div>
           </div>
@@ -35,22 +36,22 @@
 
       <!-- ROW  -->
       <div class="row" id="top">
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/1.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title that is a bit long for one line</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/2.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/3.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/4.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght and will need at least three lines of space under the photo<br><br><br><br>A huge space<br><br><br><br>A huge space</h4>
@@ -59,22 +60,22 @@
 
       <!-- ROW 2 -->
       <div class="row">
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
-           <img src="images/5.jpg" class="image-box-fill pic" onload="ResizeImage(this)" >
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
+           <img src="images/5.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/6.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/7.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/8.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
@@ -83,7 +84,7 @@
 
       <!-- ROW 3 -->
       <div class="row">
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/13.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo that won't fit a line due to his lenght and will need at least three lines of space under the photo.</h4>
@@ -95,12 +96,12 @@
              <h3>This is a brief description that can not exit the box size!<br>NOTE: the box size is fixed, If the text is too long will be truncated!</h3>
            </div>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/14.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/15.jpg" class="image-box-fill" onload="ResizeImage(this)">
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
@@ -109,22 +110,22 @@
 
       <!-- ROW 4 -->
       <div class="row">
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/9.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/10.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/11.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic" onclick="OpenFullScreenImage(this)">
+         <div class="col-xs-12 col-sm-6 col-md-3 nopadding nooverflow pic">
            <img src="images/12.jpg" class="image-box-fill" onload="ResizeImage(this)" >
            <h2 class="pic-title  pic-title-s pic-text bg-gray">A image title</h2>
            <h4 class="pic-desc pic-desc-s pic-text">A description for the photo</h4>
@@ -144,7 +145,7 @@
       <div class="row collapse top-padding-60" id="contacts" style="position:relative">
         <!-- INFO -->
         <hr width="100%">
-        <a class="fa fa-times fa-4x close-x" onclick="scrollToCollapsedToggle('#contacts')"><i class="text-invisible">close</i></a>
+        <a class="fa fa-times fa-4x close-x clickable" id="contact-close"><i class="text-invisible">close</i></a>
         <div class="col-xs-12  col-sm-6">
           <div class="row">
             <div class="col-xs-12 col-sm-4">
@@ -197,12 +198,12 @@
     <!-- OVERLAY don't edit this if you don't know what are you doing-->
     <div class="nopadding overlay overlay-color" id="img-over">
       <img src="" class="overlay-img img-responsive">
-      <a href="#" class="fa fa-times fa-4x" onclick="closeFullScreenImage(); return false;"><i class="text-invisible">Close</i></a>
+      <a href="#" class="fa fa-times fa-4x" id="overlay-close"><i class="text-invisible">Close</i></a>
       <h2 class="overlay-text o-title"></h2>
       <h4 class="overlay-text o-desc bot-padding-25"></h4>
     </div>
     <!-- ARROW BUTTON -->
-    <a class="button fa fa-chevron-up fa-4x toTopArrow clickable" onclick="scrollTo('#top'); closeAllCollapsable();" id="backToTop"><i class="text-invisible">UP</i></a>
+    <a class="button fa fa-chevron-up fa-4x toTopArrow clickable" id="backToTop"><i class="text-invisible">UP</i></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

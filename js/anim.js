@@ -22,10 +22,10 @@ function closeAllCollapsable()
 }
 
 //use only on navbar!
-function scrollToCollapsed(target, mTarget = "")
+function scrollToCollapsed(target, mTarget)
 {
   $(target).collapse('show');
-  if(mTarget != "")
+  if(mTarget != '')
     $(mTarget).scrollView();
    else $(target).scrollView();
   if($('.navbar-toggle').is(':visible'))
@@ -80,4 +80,11 @@ function closeFullScreenImage()
   document.body.style.overflow = "visible";
 }
 
+//function bind
 window.onscroll = scrollHandler;
+$('#backToTop').click(function(){ scrollTo('#top'); closeAllCollapsable();});
+$('#overlay-close').click(function(){closeFullScreenImage(); return false;});
+$('#contact-close').click(function(){scrollToCollapsedToggle('#contacts');})
+$('.pic').each( function(){ $(this).click( function() { OpenFullScreenImage(this); } ); } );
+$('#bio-navlink').click( function(){ scrollToCollapsed('#contacts',''); } );
+$('#contact-navlink').click( function() { scrollToCollapsed('#contacts','#mSend'); } );
