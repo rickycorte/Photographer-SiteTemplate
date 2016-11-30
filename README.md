@@ -6,8 +6,6 @@ This template uses:
  - JQuery
  - Font Awesome
 
-**Internet Explorer 11 is not fully supported!**
-
 ## Features:
 
 What is included in the template:
