@@ -31,6 +31,7 @@ function centerImg(target)
 
 function ResizeImage(sender)
 {
+  console.log(sender);
   AImagesToResize.push(sender);
   centerImg(sender);
   removeHover(sender.parentElement);
@@ -45,5 +46,13 @@ function centerAllImages()
   }
 }
 
+window.onload = function() {
+  var els = document.getElementsByClassName('image-box-fill');
+  var i;
+  for(i=0; i< els.length;i++)
+  {
+    ResizeImage(els[i]);
+  }
+}
 
 window.onresize = centerAllImages;
