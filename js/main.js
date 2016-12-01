@@ -31,7 +31,6 @@ function centerImg(target)
 
 function ResizeImage(sender)
 {
-  console.log(sender);
   AImagesToResize.push(sender);
   centerImg(sender);
   removeHover(sender.parentElement);
